@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "library/fermiml.html",
+    "href": "library/fermiml.html",
+    "title": "🜁 Fermionic Machine Learning",
+    "section": "",
+    "text": "This domain covers methods and tools related to fermionic machine learning."
+  },
+  {
+    "objectID": "library/fermiml.html#overview",
+    "href": "library/fermiml.html#overview",
+    "title": "🜁 Fermionic Machine Learning",
+    "section": "",
+    "text": "This domain covers methods and tools related to fermionic machine learning."
+  },
+  {
+    "objectID": "library/fermiml.html#core-resources",
+    "href": "library/fermiml.html#core-resources",
+    "title": "🜁 Fermionic Machine Learning",
+    "section": "Core Resources",
+    "text": "Core Resources\n\n[Insert repository link]\n[Insert paper link]"
+  },
+  {
+    "objectID": "library/fermiml.html#tutorials",
+    "href": "library/fermiml.html#tutorials",
+    "title": "🜁 Fermionic Machine Learning",
+    "section": "Tutorials",
+    "text": "Tutorials\n\n[Insert tutorial link]"
+  },
+  {
+    "objectID": "library/fermiml.html#homework",
+    "href": "library/fermiml.html#homework",
+    "title": "🜁 Fermionic Machine Learning",
+    "section": "Homework",
+    "text": "Homework\n\nQuestion 1:\n\n\nQuestion 2:\n\n\nExercice 1:\n\n\nExercice 2:"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "🜏 Apprentice Codex: Initiation",
+    "section": "",
+    "text": "Welcome, Apprentice.\nYou stand at the threshold of your initiation. Over the next twelve weeks, you will transition from a novice practitioner to a disciplined wielder of computational and theoretical arts. This codex defines your path, your rituals, and the expectations that govern your ascent.\nFailure to follow the codex will result in chaos. Precision, rigor, and consistency are your allies."
+  },
+  {
+    "objectID": "index.html#i.-the-three-trials-internship-milestones",
+    "href": "index.html#i.-the-three-trials-internship-milestones",
+    "title": "🜏 Apprentice Codex: Initiation",
+    "section": "🜂 I. The Three Trials (Internship Milestones)",
+    "text": "🜂 I. The Three Trials (Internship Milestones)\nYour progression will be marked by three formal rites of presentation.\n\n🜁 Week 2 — The Awakening\nObjective: Demonstrate understanding of the theoretical foundations of your quest.\n\n20-minute presentation\nMust clearly explain:\n\nCore concepts underpinning the project\nKey mathematical structures and assumptions\n\n\n\n\n\n🜃 Week 7 — The First Convergence\nObjective: Reveal your first experimental or computational results.\n\n20-minute presentation\nMust include:\n\nPreliminary results\nMethods used\nA dedicated slide titled “Obstacles & Unknowns”, containing:\n\nConcepts not yet mastered\nBlocking issues (technical or theoretical)\n\n\n\nThis is not a weakness—it is a required signal of awareness.\n\n\n\n🜄 Week 12 — The Final Transmutation\nObjective: Deliver a complete and coherent narrative of your work.\n\n20-minute presentation\nMust include:\n\nProblem statement\nMethodology\nResults\nInterpretation and limitations\n\n\nAt this stage, you are expected to demonstrate autonomy and synthesis."
+  },
+  {
+    "objectID": "index.html#ii.-the-laboratory-infrastructure-setup",
+    "href": "index.html#ii.-the-laboratory-infrastructure-setup",
+    "title": "🜏 Apprentice Codex: Initiation",
+    "section": "🜏 II. The Laboratory Infrastructure (Setup)",
+    "text": "🜏 II. The Laboratory Infrastructure (Setup)\nYour work must be structured and reproducible. Disorder is forbidden.\n\nAll artifacts must reside in a GitHub repository within the lab organization:\n\nSource code\nPresentation slides\nReports\n\nThe repository must contain:\n\nA branch named: review\nA report written in:\n\nLaTeX or\nMarkdown\n\n\nThe repository structure should remain clean, modular, and documented."
+  },
+  {
+    "objectID": "index.html#iii.-weekly-rituals-workflow-expectations",
+    "href": "index.html#iii.-weekly-rituals-workflow-expectations",
+    "title": "🜏 Apprentice Codex: Initiation",
+    "section": "🜍 III. Weekly Rituals (Workflow Expectations)",
+    "text": "🜍 III. Weekly Rituals (Workflow Expectations)\nYour training is iterative. Each week follows a strict cycle.\n\n🜁 1. The Council Meeting\n\nOne meeting per week with your supervisor(s)\nYou must come prepared with:\n\nProgress\nQuestions\nBlockers\n\n\n\n\n\n🜃 2. The Code Offering\n\nAll code must be submitted via Pull Request (PR) to the review branch\nRequirements:\n\nAssign supervisor(s) as reviewers\nEnsure code is functional and minimally documented\nPR descriptions must be explicit and structured\n\n\n\n\n\n🜄 3. The Living Manuscript\n\nYour report is a living document\nEach week:\n\nUpdate it with new findings\nSubmit updates via PR to the review branch\n\n\n\n\n\n🜂 4. The Dual Slides Rite\nEach week, you must produce two slides, submitted with your PR and presented during the meeting:\n\nSlide 1 — Knowledge Acquired\n\nWhat you learned this week\nConcepts understood\nProgress made\n\n\n\nSlide 2 — Shadows Remaining\n\nWhat you do not understand\nQuestions\nAmbiguities\nBlocking points\n\nClarity about ignorance is a requirement, not a flaw."
+  },
+  {
+    "objectID": "index.html#iv.-the-forbidden-library",
+    "href": "index.html#iv.-the-forbidden-library",
+    "title": "🜏 Apprentice Codex: Initiation",
+    "section": "🜎 IV. The Forbidden Library",
+    "text": "🜎 IV. The Forbidden Library\nThe following domains contain essential knowledge for your training:\n\nPython Good Practices\nFermionic Machine Learning\nTensor Networks\nQuantum Error Correction\nQuantum Simulation"
+  },
+  {
+    "objectID": "index.html#final-words",
+    "href": "index.html#final-words",
+    "title": "🜏 Apprentice Codex: Initiation",
+    "section": "🜏 Final Words",
+    "text": "🜏 Final Words\nThis codex is not decorative—it is operational.\nIf you follow it rigorously:\n\nYour progress will be measurable\nYour understanding will deepen\nYour work will be reproducible and valuable\n\nIf you deviate:\n\nIssues will compound rapidly\n\nWelcome to the lab.\nYour training begins now."
+  },
+  {
+    "objectID": "library/python-good-practices.html",
+    "href": "library/python-good-practices.html",
+    "title": "🜏 Python Good Practices — The Discipline of the Craft",
+    "section": "",
+    "text": "In this laboratory, Python is not merely a tool—it is an instrument of precision.\nCode that is unclear, irreproducible, or poorly structured is considered unstable magic.\nThis page defines the expected standards."
+  },
+  {
+    "objectID": "library/python-good-practices.html#environment-management-the-first-rule",
+    "href": "library/python-good-practices.html#environment-management-the-first-rule",
+    "title": "🜏 Python Good Practices — The Discipline of the Craft",
+    "section": "🜂 Environment Management — The First Rule",
+    "text": "🜂 Environment Management — The First Rule\nAll projects must use isolated environments.\n\n⚠️ Mandatory Tool: uv\nYou are required to use :contentReferenceoaicite:0 for:\n\nCreating virtual environments\n\nManaging dependencies\n\nInstalling packages\n\n\n\nWhy uv?\n\nExtremely fast (Rust-based)\nUnified toolchain (replaces pip, venv, pip-tools)\nDeterministic dependency resolution\nSimpler workflow\n\n\n\nMinimal Workflow\n# Create environment\nuv init --python {python_version}\n\n# Install dependencies\nuv add numpy scipy torch\n\n# Run a script\nuv run python your_script.py"
+  },
+  {
+    "objectID": "library/python-good-practices.html#project-structure-order-before-power",
+    "href": "library/python-good-practices.html#project-structure-order-before-power",
+    "title": "🜏 Python Good Practices — The Discipline of the Craft",
+    "section": "🜁 Project Structure — Order Before Power",
+    "text": "🜁 Project Structure — Order Before Power\nA project must be organized as follows:\nproject/\n├── src/\n│   └── your_package/\n├── scripts/\n├── tests/\n├── pyproject.toml\n├── README.md\n└── .venv/\n\nKey Principles\n\nUse src/ layout to avoid import ambiguity\nSeparate library code from scripts\nAlways include a pyproject.toml"
+  },
+  {
+    "objectID": "library/python-good-practices.html#code-quality-clarity-over-cleverness",
+    "href": "library/python-good-practices.html#code-quality-clarity-over-cleverness",
+    "title": "🜏 Python Good Practices — The Discipline of the Craft",
+    "section": "🜃 Code Quality — Clarity Over Cleverness",
+    "text": "🜃 Code Quality — Clarity Over Cleverness\n\nRules\n\nFunctions must be short and single-purpose\nVariable names must be explicit\nAvoid hidden side effects\nPrefer readability over micro-optimizations\n\n\n\nFormatting & Linting\nRecommended tools:\n\nruff\nblack\n\nExample:\nruff check .\nruff format ."
+  },
+  {
+    "objectID": "library/python-good-practices.html#reproducibility-no-uncontrolled-variance",
+    "href": "library/python-good-practices.html#reproducibility-no-uncontrolled-variance",
+    "title": "🜏 Python Good Practices — The Discipline of the Craft",
+    "section": "🜄 Reproducibility — No Uncontrolled Variance",
+    "text": "🜄 Reproducibility — No Uncontrolled Variance\n\nAll dependencies must be pinned\nExperiments must be reproducible from a fresh clone\nRandom seeds must be controlled when relevant"
+  },
+  {
+    "objectID": "library/python-good-practices.html#testing-trust-but-verify",
+    "href": "library/python-good-practices.html#testing-trust-but-verify",
+    "title": "🜏 Python Good Practices — The Discipline of the Craft",
+    "section": "🜂 Testing — Trust, but Verify",
+    "text": "🜂 Testing — Trust, but Verify\nUse:\n\npytest\n\nMinimum expectations:\n\nCore functions must have tests\nEdge cases must be considered\nTests must run without manual intervention\n\nuv run pytest"
+  },
+  {
+    "objectID": "library/python-good-practices.html#documentation-knowledge-must-persist",
+    "href": "library/python-good-practices.html#documentation-knowledge-must-persist",
+    "title": "🜏 Python Good Practices — The Discipline of the Craft",
+    "section": "🜏 Documentation — Knowledge Must Persist",
+    "text": "🜏 Documentation — Knowledge Must Persist\n\nEvery module must have a docstring\nComplex logic must be explained\nReports must reference the code that generated results"
+  },
+  {
+    "objectID": "library/python-good-practices.html#recommended-resources-external-grimoires",
+    "href": "library/python-good-practices.html#recommended-resources-external-grimoires",
+    "title": "🜏 Python Good Practices — The Discipline of the Craft",
+    "section": "🜎 Recommended Resources — External Grimoires",
+    "text": "🜎 Recommended Resources — External Grimoires\n\nPython Best Practices\n\nPython Packaging User Guide\nReal Python Best Practices\n\n\n\nuv Documentation\n\nuv Official Documentation\n\n\n\nTesting\n\npytest Documentation"
+  },
+  {
+    "objectID": "library/python-good-practices.html#final-rule",
+    "href": "library/python-good-practices.html#final-rule",
+    "title": "🜏 Python Good Practices — The Discipline of the Craft",
+    "section": "🜏 Final Rule",
+    "text": "🜏 Final Rule\nIf your code cannot be:\n\ninstalled cleanly,\nexecuted reproducibly,\nand understood by another researcher,\n\nthen it is not complete.\nDiscipline in tooling and structure is not optional."
+  }
+]

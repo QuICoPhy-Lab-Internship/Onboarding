@@ -1,0 +1,30 @@
+---
+title: "🜁 Fermionic Machine Learning"
+---
+
+## Overview
+
+This domain covers methods and tools related to fermionic machine learning.
+
+## Core Resources
+
+- [Insert repository link]
+- [Insert paper link]
+
+## Tutorials
+
+- [Insert tutorial link]
+
+
+## Homework
+
+### Question 1:
+
+
+### Question 2:
+
+
+### Exercice 1:
+
+
+### Exercice 2:
