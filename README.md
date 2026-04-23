@@ -14,11 +14,11 @@
 To preview the website, run the following command in the terminal:
 
 ```bash
-quarto preview
+uv run quarto preview
 ```
 
 To build the website, run:
 
 ```bash
-quarto render
+uv run quarto render
 ```

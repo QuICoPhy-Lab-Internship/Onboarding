@@ -4,7 +4,9 @@ title: "🜏 Apprentice Codex: Initiation"
 
 Welcome, Apprentice.
 
-You stand at the threshold of your initiation. Over the next twelve weeks, you will transition from a novice practitioner to a disciplined wielder of computational and theoretical arts. This codex defines your path, your rituals, and the expectations that govern your ascent.
+You stand at the threshold of your initiation. Over the next twelve weeks, you will transition from a novice
+practitioner to a disciplined wielder of computational and theoretical arts. This codex defines your path, your rituals,
+and the expectations that govern your ascent.
 
 Failure to follow the codex will result in chaos. Precision, rigor, and consistency are your allies.
 
@@ -21,8 +23,8 @@ Your progression will be marked by three formal rites of presentation.
 * 20-minute presentation
 * Must clearly explain:
 
-  * Core concepts underpinning the project
-  * Key mathematical structures and assumptions
+    * Core concepts underpinning the project
+    * Key mathematical structures and assumptions
 
 ---
 
@@ -33,12 +35,12 @@ Your progression will be marked by three formal rites of presentation.
 * 20-minute presentation
 * Must include:
 
-  * Preliminary results
-  * Methods used
-  * **A dedicated slide titled “Obstacles & Unknowns”**, containing:
+    * Preliminary results
+    * Methods used
+    * **A dedicated slide titled “Obstacles & Unknowns”**, containing:
 
-    * Concepts not yet mastered
-    * Blocking issues (technical or theoretical)
+        * Concepts not yet mastered
+        * Blocking issues (technical or theoretical)
 
 This is not a weakness—it is a required signal of awareness.
 
@@ -51,10 +53,10 @@ This is not a weakness—it is a required signal of awareness.
 * 20-minute presentation
 * Must include:
 
-  * Problem statement
-  * Methodology
-  * Results
-  * Interpretation and limitations
+    * Problem statement
+    * Methodology
+    * Results
+    * Interpretation and limitations
 
 At this stage, you are expected to demonstrate autonomy and synthesis.
 
@@ -66,17 +68,17 @@ Your work must be structured and reproducible. Disorder is forbidden.
 
 * All artifacts must reside in a GitHub repository within the lab organization:
 
-  * Source code
-  * Presentation slides
-  * Reports
+    * Source code
+    * Presentation slides
+    * Reports
 
 * The repository **must contain**:
 
-  * A branch named: `review`
-  * A report written in:
+    * A branch named: `review`
+    * A report written in:
 
-    * LaTeX **or**
-    * Markdown
+        * LaTeX **or**
+        * Markdown
 
 * The repository structure should remain clean, modular, and documented.
 
@@ -91,9 +93,9 @@ Your training is iterative. Each week follows a strict cycle.
 * One meeting per week with your supervisor(s)
 * You must come prepared with:
 
-  * Progress
-  * Questions
-  * Blockers
+    * Progress
+    * Questions
+    * Blockers
 
 ---
 
@@ -102,9 +104,9 @@ Your training is iterative. Each week follows a strict cycle.
 * All code must be submitted via **Pull Request (PR)** to the `review` branch
 * Requirements:
 
-  * Assign supervisor(s) as reviewers
-  * Ensure code is functional and minimally documented
-  * PR descriptions must be explicit and structured
+    * Assign supervisor(s) as reviewers
+    * Ensure code is functional and minimally documented
+    * PR descriptions must be explicit and structured
 
 ---
 
@@ -113,8 +115,8 @@ Your training is iterative. Each week follows a strict cycle.
 * Your report is a **living document**
 * Each week:
 
-  * Update it with new findings
-  * Submit updates via PR to the `review` branch
+    * Update it with new findings
+    * Submit updates via PR to the `review` branch
 
 ---
 
