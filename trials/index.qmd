@@ -1,0 +1,30 @@
+---
+title: "🜔 The Path"
+---
+
+Two masters preside over this codex. **The Code Sorcerer** carved the Path; **The Dark Algebraist** keeps its seals. Their names are not yet yours to know.
+
+---
+
+Beyond the rites and the rituals lies a continuous reckoning. Every assignment you complete is a creature defeated. Every defeated creature grants points. Points raise you through seven titles, from Initiate to Hierophant.
+
+Hidden among the work are sigils — minor mysteries bestowed for deeds beyond the pattern. And gated by your ascent are three Forbidden Classes, sealed until you climb high enough.
+
+## 🜂 The Reckoning
+
+Your record of creatures defeated lives in your own project repo, in `progress.md`. Update it weekly, in the same Pull Request as your code, slides, and report. The master reviews the log alongside the work — the record is itself an artifact of your apprenticeship.
+
+Begin with [the Progress Log Template](progress-template.md) — copy it once into your repo, then append weekly.
+
+## 🜁 Consult the Path
+
+- [The Ladder](ladder.qmd) — the seven titles and their thresholds
+- [The Bestiary](bestiary.qmd) — the creatures you will face
+- [Minor Mysteries](sigils.qmd) — the sigils, cryptic
+- [Progress Log Template](progress-template.md) — the file you maintain
+
+## 🜃 The Currency of Mastery
+
+Every defeated creature has a tier. Each tier carries points. There are two kinds of creature in the Bestiary: those that are *named* and *pre-priced* (the recurring shapes of weekly work), and those that are *wild* — undiscovered, judged in the moment by the master who assigns them.
+
+You will not always know what you are facing. The Bestiary is your guide, but the masters' word is final.

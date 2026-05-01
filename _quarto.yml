@@ -8,6 +8,16 @@ website:
     left:
       - href: index.qmd
         text: Codex
+      - text: The Path
+        menu:
+          - href: trials/index.qmd
+            text: Overview
+          - href: trials/ladder.qmd
+            text: The Ladder
+          - href: trials/bestiary.qmd
+            text: The Bestiary
+          - href: trials/sigils.qmd
+            text: Minor Mysteries
       - text: Forbidden Library
         menu:
           - href: library/python-good-practices.qmd
