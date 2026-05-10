@@ -1,30 +1,193 @@
 ---
-title: "🜁 Fermionic Machine Learning"
+title: "Fermionic Machine Learning"
+format:
+  html:
+    toc: true
+    number-sections: true
+    math: mathjax
 ---
 
 ## Overview
 
-This domain covers methods and tools related to fermionic machine learning.
+We introduce fermionic machine learning (FermiML), a machine learning framework based on
+fermionic quantum computation. FermiML models are expressed in terms of parameterized matchgate circuits,
+a restricted class of quantum circuits that map exactly to systems of free Majorana fermions.
+The FermiML framework allows for building fermionic counterparts of any quantum machine learning (QML)
+model based on parameterized quantum circuits, including models that produce highly entangled quantum states.
+Importantly, matchgate circuits are efficiently simulable classically, thus rendering FermiML a flexible framework
+for utility benchmarks of QML methods. Building on this foundation, we are actively pushing FermiML beyond
+vanilla machine learning, branching into deep learning, generative models, and optimization frameworks.
+A notable outcome of this work is the development of MatchCake, an open-source Python package
+for simulating matchgate circuits — with a publication on the way!
 
 ## Core Resources
 
-- [Insert repository link]
-- [Insert paper link]
+- [MatchCake Repository](https://github.com/MatchCake/MatchCake)
+- [FermiML Paper (IEEE)](https://ieeexplore.ieee.org/document/10821385)
+- [FermiML Paper (arXiv)](https://arxiv.org/abs/2404.19032)
+- [MatchCake Documentation](https://matchcake.github.io/MatchCake/)
 
 ## Tutorials
 
-- [Insert tutorial link]
-
+- [MatchCake Basics](https://github.com/MatchCake/MatchCake/blob/main/tutorials/matchcake_basics.ipynb)
+- [Expectation Value Calculation](https://github.com/MatchCake/MatchCake/blob/main/tutorials/expectation_values.ipynb)
+- [Iris Classification with a Fermionic Kernel](https://github.com/MatchCake/MatchCake/blob/main/tutorials/iris_classification.ipynb)
+- [Nystroem Kernel Approximation](https://github.com/MatchCake/MatchCake/blob/main/tutorials/nystroem_kernel_approximation.ipynb)
+- [Learn more about Kernel Approximation](https://scikit-learn.org/stable/modules/kernel_approximation.html)
 
 ## Homework
 
-### Question 1:
+### Questions from Basic Quantum Mechanics & Linear Algebra
 
+#### Quantum Physics
 
-### Question 2:
+1. What is a quantum state, an observable in quantum mechanics and a quantum operator?
+2. What is an expectation value? How do you calculate it in quantum mechanics?
+3. What is a Hamiltonian? What are the Pauli matrices?
+4. What is the correlation between single qubit rotation gates and the Pauli matrices?
+5. What is commutation and what are commuting variables?
+6. What is meant by orthogonality and orthonormality?
+7. What are the Bell states?
 
+> **Exercise:** Calculate the expectation value of the Pauli-$Z$ operator for the state
+> $|+\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)$.
+> What does this result tell you physically?
 
-### Exercice 1:
+#### Linear Algebra
 
+1. What is the rank of a matrix?
+2. What is a tensor? And by extension, what is a tensor network?
+3. What are unitary, Hermitian, normal, symmetric/skew-symmetric, upper/lower triangular matrices?
+4. Matrix operations: eigendecompositions, singular value decompositions, trace, determinant, inversion, Pfaffian,
+   permanent.
+5. What is a random matrix?
+6. What is the Haar measure?
+7. What are dot and vector products, inner and outer products, tensor product, Kronecker product, Hadamard product?
+8. What is an Einstein summation? Are they important in tensor networks?
+9. How do you compute the gradient of a function (analytically & numerically)?
 
-### Exercice 2:
+> **Exercise 1:** Given the matrix $H = \begin{pmatrix} 1 & i \\ -i & 1 \end{pmatrix}$,
+> (a) verify that it is Hermitian,
+> (b) compute its eigendecomposition and verify that the eigenvectors are orthonormal,
+> (c) compute its trace and determinant, and
+> (d) verify that the matrix exponential $U = e^{-iH}$ is unitary.
+
+> **Exercise 2:** Compute the tensor product $|0\rangle \otimes |1\rangle$ explicitly
+> in vector form. Then represent the two-qubit state as a rank-2 tensor $T^{ij}$ and
+> write the contraction $\sum_{j} T^{ij} T^{*}_{jk}$ in Einstein summation notation.
+> Sketch the corresponding tensor network diagram.
+
+---
+
+### Questions from Basic Machine Learning
+
+1. What is principal component analysis (PCA), and how is it used in machine learning?
+2. What are some of the main ML paradigms and what are the differences between them?
+3. What is the difference between regression, classification, binary vs multiclass classification?
+4. What are some common methods for data preprocessing with feature vectors, images and time series?
+5. What is feature engineering, and how is it used?
+6. What are classical kernel methods?
+7. What is a kernel (Gram) matrix?
+8. Explain the core principles and differences of these models: Linear, Probabilistic, Tree-Based, Neural Networks. Are
+   there specific sets of data these are particularly good at?
+9. What are the parameters and hyperparameters of a model?
+10. What is a loss function?
+11. What is gradient descent?
+12. What are the different kinds of neural networks? How do you train a neural network? What is an optimizer? What are
+    some current state-of-the-art options available?
+13. What is a perceptron and a multi-layer perceptron?
+14. What are hidden layers?
+15. What are the common evaluation metrics for classification and regression?
+16. What is cross-validation and why is it important?
+17. What are training, test and cross-validation sets?
+18. What is the difference between underfitting and overfitting?
+19. What is generalization in machine learning?
+20. What is parameter regularization?
+21. What does "inductive bias" mean?
+22. Explain the common methods to optimize the hyperparameters of a model.
+23. What is a transformer?
+24. What is the attention mechanism in LLM training?
+25. What is fine-tuning of an LLM model?
+
+> **Exercise 1:** Implement gradient descent from scratch in Python to minimize the
+> mean squared error (MSE) loss $\mathcal{L} = \frac{1}{N}\sum_{i=1}^{N}(y_i - \hat{y}_i)^2$
+> on a simple linear regression problem.
+> (a) Generate a toy dataset of 100 points from $y = 3x + 2 + \varepsilon$ where
+> $\varepsilon$ is Gaussian noise.
+> (b) Train your model using gradient descent and plot the loss curve.
+> (c) Experiment with at least three different learning rates $\eta \in \{0.1, 0.01, 0.001\}$
+> and comment on the effect.
+
+> **Exercise 2:** Code from scratch a multi-layer perceptron (MLP) with two layers using
+> gradient descent to classify the Iris dataset using `numpy` only.
+> Thereafter, do the same using `PyTorch` with the Adam and AdamW optimizers.
+
+> **Exercise 3:** Using `PyTorch`, build a multi-layer perceptron (MLP) to classify the Wine dataset.
+> (a) Define a network with at least 2 hidden layers and ReLU activations $\sigma(x) = \max(0, x)$.
+> (b) Train it using both SGD and Adam optimizers and compare their convergence curves.
+> (c) Report accuracy on the test set and plot a confusion matrix.
+
+---
+
+### Questions from Quantum Simulation, Quantum Computation & Quantum Machine Learning
+
+1. What is a quantum gate, and how does it differ from a classical logic gate?
+2. What is a random unitary circuit?
+3. What is a qubit, and how does it differ from a classical bit?
+4. What is quantum superposition, and why is it computationally useful?
+5. What is a parameterized quantum circuit (PQC), and how is it used in quantum algorithms?
+6. What is quantum entanglement, and how is it generated in a quantum circuit?
+7. What is a unitary matrix, and why must quantum gates be unitary?
+8. What is quantum measurement, and how does it affect the state of a quantum system?
+9. What is the difference between a pure state and a mixed state?
+10. What is a density matrix, and when is it used instead of a state-vector?
+11. What is meant by strong and weak simulation?
+12. How are results of computation actually measured on a quantum computer?
+13. What is quantum machine learning?
+14. What are quantum kernel methods?
+15. How can a quantum circuit be used as a kernel model?
+16. What are variational quantum algorithms? What is meant by variational training in "variational quantum algorithms"?
+17. How can a quantum circuit be variationally trained?
+18. What is the problem of barren plateaus in variational quantum algorithms and exponential concentration in quantum
+    kernel methods?
+19. What is quantum data encoding, and what are the main strategies for embedding classical data into a quantum state?
+20. What is quantum data?
+
+> **Exercise 1:** Using `PennyLane` (preferably) or `Qiskit`, implement a simple variational quantum
+> classifier on a binary classification toy dataset.
+> (a) Encode the input data using angle encoding, mapping each feature $x_i$ to a
+> rotation gate $R_X(x_i)$ on qubit $i$.
+> (b) Define a parameterized quantum circuit ansatz with at least 2 layers of parameterized rotations
+> $R_Y(\theta_i)$ and entangling $\text{CNOT}$ gates.
+> (c) Train the circuit variationally by minimizing the binary cross-entropy loss
+> $$\mathcal{L} = -\frac{1}{N}\sum_{i=1}^{N}\left[y_i \log(\hat{y}_i) +
+> (1 - y_i)\log(1 - \hat{y}_i)\right]$$
+> using gradient descent.
+> (d) Plot the loss curve and report the classification accuracy on a test set.
+
+> **Exercise 2:** Implement a quantum kernel classifier using `PennyLane` (preferably) or `Qiskit`.
+> (a) Define a feature map circuit $U(x)$ and compute the quantum kernel (Gram) matrix
+> $K_{ij} = |\langle 0 | U^\dagger(x_i) U(x_j) | 0 \rangle|^2$
+> for a small dataset (e.g. the Iris dataset).
+> (b) Plug the resulting kernel matrix $K$ into a classical support vector machine (SVM)
+> and report the classification accuracy.
+> (c) Now consider a PQC ansatz with $n \in \{2, 4, 6, 8\}$ qubits and compute the
+> variance of the gradient $\text{Var}\left[\partial_\theta \mathcal{L}\right]$
+> as a function of $n$. What do you observe?
+
+---
+
+### Basics of Matchgates
+
+1. What are matchgate circuits, and why are they efficiently simulable classically compared to general quantum circuits?
+2. What is the connection between matchgate circuits and free Majorana fermions? How does this mapping motivate the
+   FermiML framework?
+3. What is a Majorana fermion? What is the relation between Majorana fermions and fermionic creation and annihilation
+   operators?
+4. What is the Jordan-Wigner transformation, and how does it map fermionic operators to qubit operators?
+5. What is a free-fermionic system?
+6. What is the Gaussian state formalism?
+7. What is a covariance matrix in the context of fermionic Gaussian states, and how is it used to compute expectation
+   values?
+8. What is the Pfaffian of a matrix, and where does it appear in the computation of matchgate circuit outputs?
+
