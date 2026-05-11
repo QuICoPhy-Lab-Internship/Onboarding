@@ -1,0 +1,74 @@
+---
+title: "🛡 Quantum Error Correction — Protecting Information in Noisy Quantum Systems"
+format:
+  html:
+    toc: true
+    number-sections: true
+    math: mathjax
+---
+
+## Overview
+
+Quantum error correction (QEC) provides the theoretical and practical framework for protecting quantum
+information against noise, decoherence, and imperfect control. Because qubits cannot be cloned and
+measurements disturb quantum states, QEC differs fundamentally from classical error correction:
+information is encoded nonlocally across many physical qubits, and errors are inferred indirectly
+through syndrome measurements.
+
+QEC is the key bridge between noisy near-term devices and fault-tolerant quantum computing. It combines
+stabilizer theory, coding theory, quantum circuit design, and hardware constraints into a unified stack
+for reliable computation.
+
+This page is an onboarding entry point to QEC: it introduces the core language of the field, maps to
+practical software tools, and provides references for both foundations and modern developments.
+
+## Core Concepts to Master
+
+1. Noise channels, decoherence times, and error models (Pauli, amplitude damping, depolarizing)
+2. Bit-flip/phase-flip intuition and the role of redundancy in quantum encoding
+3. Stabilizer formalism, syndrome extraction, and recovery operations
+4. Distance, logical qubits, and code rate tradeoffs
+5. Threshold theorem and fault-tolerant circuit design
+6. Surface codes and topological protection principles
+7. Decoding strategies (MWPM, belief propagation, neural decoders)
+
+## Main Software Ecosystem
+
+- [Qiskit QEC](https://qiskit-community.github.io/qiskit-qec/)
+- [Stim](https://github.com/quantumlib/Stim)
+- [PyMatching](https://github.com/oscarhiggott/PyMatching)
+- [PECOS](https://github.com/PECOS-packages/PECOS)
+- [qecsim](https://qecsim.github.io/)
+
+## References
+
+### Textbooks and Reviews
+
+- Nielsen, M. A., & Chuang, I. L. *Quantum Computation and Quantum Information* (10th Anniversary Ed., Cambridge University Press, 2010). (QEC foundations)
+- Lidar, D. A., & Brun, T. A. (Eds.). *Quantum Error Correction* (Cambridge University Press, 2013).
+- Terhal, B. M. "Quantum error correction for quantum memories." *Reviews of Modern Physics* **87**, 307-346 (2015).
+- Gottesman, D. *An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation.* arXiv:0904.2557.
+- Preskill, J. *Lecture Notes for Physics 219/Chapter on Quantum Error Correction* (Caltech).
+
+### Foundational and Influential Papers
+
+- Shor, P. W. "Scheme for reducing decoherence in quantum computer memory." *Physical Review A* **52**, R2493-R2496 (1995).
+- Steane, A. M. "Error Correcting Codes in Quantum Theory." *Physical Review Letters* **77**, 793-797 (1996).
+- Calderbank, A. R., & Shor, P. W. "Good quantum error-correcting codes exist." *Physical Review A* **54**, 1098-1105 (1996).
+- Kitaev, A. Y. "Fault-tolerant quantum computation by anyons." *Annals of Physics* **303**, 2-30 (2003).
+- Dennis, E., Kitaev, A., Landahl, A., & Preskill, J. "Topological quantum memory." *Journal of Mathematical Physics* **43**, 4452-4505 (2002).
+- Fowler, A. G., Mariantoni, M., Martinis, J. M., & Cleland, A. N. "Surface codes: Towards practical large-scale quantum computation." *Physical Review A* **86**, 032324 (2012).
+
+### Decoding and Practical Fault Tolerance
+
+- Edmonds, J. "Paths, trees, and flowers." *Canadian Journal of Mathematics* **17**, 449-467 (1965). (Matching foundations used in MWPM decoders)
+- Bravyi, S., & Haah, J. "Simulation of rare events in quantum error correction." *Physical Review A* **88**, 062308 (2013).
+- Delfosse, N., & Nickerson, N. H. "Almost-linear time decoding algorithm for topological codes." arXiv:1709.06218.
+- Chamberland, C., et al. "Topological and Subsystem Codes on Low-Degree Graphs with Flag Qubits." *Physical Review X* **10**, 011022 (2020).
+
+### Practical Learning Resources
+
+- [Qiskit QEC Documentation](https://qiskit-community.github.io/qiskit-qec/)
+- [Stim Documentation](https://github.com/quantumlib/Stim/wiki)
+- [PyMatching Documentation](https://pymatching.readthedocs.io/)
+- [Error Correction Zoo](https://errorcorrectionzoo.org/)
