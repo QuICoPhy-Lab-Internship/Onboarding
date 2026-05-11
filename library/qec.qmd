@@ -9,31 +9,30 @@ format:
 
 ## Overview
 
-Quantum error correction (QEC) provides the theoretical and practical framework for protecting quantum
-information against noise, decoherence, and imperfect control. Because qubits cannot be cloned and
-measurements disturb quantum states, QEC differs fundamentally from classical error correction:
-information is encoded nonlocally across many physical qubits, and errors are inferred indirectly
-through syndrome measurements.
+Quantum error correction (QEC) provides the theoretical and practical framework for protecting quantum information against noise, decoherence, and imperfect control.
+Because qubits cannot be cloned and measurements disturb quantum states, QEC differs fundamentally from classical error correction: information is encoded nonlocally across many physical qubits, and errors are inferred indirectly through _syndrome_ measurements.
 
-QEC is the key bridge between noisy near-term devices and fault-tolerant quantum computing. It combines
-stabilizer theory, coding theory, quantum circuit design, and hardware constraints into a unified stack
-for reliable computation.
+QEC is the key bridge between noisy near-term devices and fault-tolerant quantum computing.
+It combines stabilizer theory, coding theory, quantum circuit design, and hardware constraints into a unified stack for reliable computation.
 
-This page is an onboarding entry point to QEC: it introduces the core language of the field, maps to
-practical software tools, and provides references for both foundations and modern developments.
+This page is an onboarding entry point to QEC: it provides references for core concepts of the field and for practical software tools.
 
 ## Core Concepts to Master
 
-1. Noise channels, decoherence times, and error models (Pauli, amplitude damping, depolarizing)
-2. Bit-flip/phase-flip intuition and the role of redundancy in quantum encoding
-3. Stabilizer formalism, syndrome extraction, and recovery operations
-4. Distance, logical qubits, and code rate tradeoffs
-5. Threshold theorem and fault-tolerant circuit design
-6. Surface codes and topological protection principles
-7. Decoding strategies (MWPM, belief propagation, neural decoders)
+1. Discretization of errors
+2. Noise (error) channels (bit-flip, phase-flip, depolarizing, amplitude damping, etc.)
+3. Bit-flip/phase-flip intuition and the role of redundancy in quantum encoding
+4. Stabilizer formalism, syndrome extraction, and recovery operations
+5. Parity-check matrix
+6. Distance, logical qubits, and code rate tradeoffs
+7. Threshold theorem (and fault-tolerance)
+8. Decoding strategies (MWPM, belief propagation, neural decoders, etc.)
+* Surface codes and topological protection principles
 
 ## Main Software Ecosystem
 
+- **[qLDPC](https://github.com/MatchCake/MatchCake)**
+- **[cudaq-qec](https://nvidia.github.io/cudaqx/index.html)**
 - [Qiskit QEC](https://qiskit-community.github.io/qiskit-qec/)
 - [Stim](https://github.com/quantumlib/Stim)
 - [PyMatching](https://github.com/oscarhiggott/PyMatching)
@@ -42,15 +41,30 @@ practical software tools, and provides references for both foundations and moder
 
 ## References
 
-### Textbooks and Reviews
+### Textbooks and introductory guides
 
 - Nielsen, M. A., & Chuang, I. L. *Quantum Computation and Quantum Information* (10th Anniversary Ed., Cambridge University Press, 2010). (QEC foundations)
+    - [Chapter 10 - Quantum error-correction](https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf)
 - Lidar, D. A., & Brun, T. A. (Eds.). *Quantum Error Correction* (Cambridge University Press, 2013).
-- Terhal, B. M. "Quantum error correction for quantum memories." *Reviews of Modern Physics* **87**, 307-346 (2015).
-- Gottesman, D. *An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation.* arXiv:0904.2557.
-- Preskill, J. *Lecture Notes for Physics 219/Chapter on Quantum Error Correction* (Caltech).
+    - [Chapter 2 - Introduction to quantum error correction](https://www.weizmann.ac.il/math/vidick/sites/math.vidick/files/uploads/Bacon_IntroToQEC.pdf)
+- [Quantum Error Correction: An Introductory Guide](https://arxiv.org/abs/1907.11157)
+- [An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation](https://arxiv.org/abs/0904.2557)
+- [Threshold theorem](https://en.wikipedia.org/wiki/Threshold_theorem)
 
-### Foundational and Influential Papers
+### Online blog on QEC
+
+- [Arthur Pesah's blog](https://arthurpesah.me/blog/)
+    - [The stabilizer trilogy I - Stabilizer codes](https://arthurpesah.me/blog/2023-01-31-stabilizer-formalism-1/)
+    - [The stabilizer trilogy II - Logical operators](https://arthurpesah.me/blog/2023-03-16-stabilizer-formalism-2/)
+    - [The stabilizer trilogy III — Parity-check matrices and decoding](https://arthurpesah.me/blog/2023-03-28-stabilizer-formalism-3/)
+
+### Other known references
+
+- Terhal, B. M. "[Quantum error correction for quantum memories](https://doi.org/10.1103/RevModPhys.87.307)." *Reviews of Modern Physics* **87**, 307-346 (2015).
+- Preskill, J. *[Lecture Notes for Physics 219/Chapter on Quantum Error Correction](https://www.preskill.caltech.edu/ph229/)* (Caltech).
+    - [Chapter 7 - Quantum Error Correction](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf)
+
+### Foundational and Influential Papers (if you're interested)
 
 - Shor, P. W. "Scheme for reducing decoherence in quantum computer memory." *Physical Review A* **52**, R2493-R2496 (1995).
 - Steane, A. M. "Error Correcting Codes in Quantum Theory." *Physical Review Letters* **77**, 793-797 (1996).
@@ -61,13 +75,13 @@ practical software tools, and provides references for both foundations and moder
 
 ### Decoding and Practical Fault Tolerance
 
-- Edmonds, J. "Paths, trees, and flowers." *Canadian Journal of Mathematics* **17**, 449-467 (1965). (Matching foundations used in MWPM decoders)
-- Bravyi, S., & Haah, J. "Simulation of rare events in quantum error correction." *Physical Review A* **88**, 062308 (2013).
-- Delfosse, N., & Nickerson, N. H. "Almost-linear time decoding algorithm for topological codes." arXiv:1709.06218.
-- Chamberland, C., et al. "Topological and Subsystem Codes on Low-Degree Graphs with Flag Qubits." *Physical Review X* **10**, 011022 (2020).
+- Edmonds, J. "[Paths, trees, and flowers](https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/paths-trees-and-flowers/08B492B72322C4130AE800C0610E0E21)." *Canadian Journal of Mathematics* **17**, 449-467 (1965). (Matching foundations used in MWPM decoders)
+- Bravyi, S., & Haah, J. "[Simulation of rare events in quantum error correction](https://doi.org/10.1103/PhysRevA.88.062308)." *Physical Review A* **88**, 062308 (2013).
+- Delfosse, N., & Nickerson, N. H. "[Almost-linear time decoding algorithm for topological codes](https://doi.org/10.22331/q-2021-12-02-595)." arXiv:1709.06218.
 
 ### Practical Learning Resources
 
+- [cudaq-qec examples](https://nvidia.github.io/cudaqx/examples_rst/qec/examples.html)
 - [Qiskit QEC Documentation](https://qiskit-community.github.io/qiskit-qec/)
 - [Stim Documentation](https://github.com/quantumlib/Stim/wiki)
 - [PyMatching Documentation](https://pymatching.readthedocs.io/)
