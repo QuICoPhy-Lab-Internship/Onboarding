@@ -3,24 +3,20 @@ name: Deploy Quarto Site
 on:
   push:
     branches: [main]
-
   pull_request:
     branches: ["*"]
 
 permissions:
   contents: write
-  pull-requests: write
-  actions: write
-  checks: write
-  statuses: write
-  issues: write
-  discussions: write
-  id-token: write
   pages: write
+  id-token: write
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -29,10 +25,11 @@ jobs:
       - name: Render site
         run: quarto render
 
-      - name: Deploy to Pages
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs
 
       - name: Deploy
+        id: deployment
         uses: actions/deploy-pages@v4
