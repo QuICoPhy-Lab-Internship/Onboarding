@@ -34,6 +34,7 @@ connects to practical software stacks, and provides high-quality references for 
 
 - **[PennyLane](https://pennylane.ai/)**
 - **[Qiskit](https://qiskit.org/)**
+- **[Matchcake](https://matchcake.github.io/MatchCake/)**
 - [Cirq](https://quantumai.google/cirq)
 - [QuTiP](https://qutip.org/)
 - [Mitiq](https://mitiq.readthedocs.io/)
@@ -48,8 +49,10 @@ connects to practical software stacks, and provides high-quality references for 
 
 - Nielsen, M. A., & Chuang, I. L. *Quantum Computation and Quantum Information* (10th Anniversary Ed., Cambridge University Press, 2010).
   - Chapter 2 and 4 in priority, then Chapter 1 and 3 if the time allows for it.
-- Preskill, J. *Lecture Notes for Physics 219: Quantum Computation* (Caltech): https://theory.caltech.edu/~preskill/ph219/
-- Griffiths, D. J., & Schroeter, D. F. (2018). *Introduction to Quantum Mechanics* (3rd ed.). Cambridge University Press
+- Kaye, P., Laflamme, R., & Mosca, M. *An Introduction to Quantum Computing* (Oxford University Press, 2007).
+- Preskill, J. *Lecture Notes for Physics 219: Quantum Computation* (Caltech): [Physics 219 Lecture Notes](https://theory.caltech.edu/~preskill/ph219/?utm_source=chatgpt.com).
+- Wong, T. G. *Introduction to Classical and Quantum Computing* (Rooted Grove, 2022).
+- Griffiths, D. J., & Schroeter, D. F. *Introduction to Quantum Mechanics* (3rd ed., Cambridge University Press, 2018).
 
 ### Practical Learning Resources
 
