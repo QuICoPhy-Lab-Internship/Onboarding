@@ -16,6 +16,7 @@ permissions:
   issues: write
   discussions: write
   id-token: write
+  pages: write
 
 jobs:
   build-deploy:
