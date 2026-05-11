@@ -1,5 +1,5 @@
 ---
-title: "🛡 Quantum Error Correction — Protecting Information in Noisy Quantum Systems"
+title: "Quantum Error Correction"
 format:
   html:
     toc: true
@@ -17,21 +17,22 @@ It combines stabilizer theory, coding theory, quantum circuit design, and hardwa
 
 This page is an onboarding entry point to QEC: it provides references for core concepts of the field and for practical software tools.
 
-## Core Concepts to Master
+## Core Concepts to Understand
 
-1. Discretization of errors
-2. Noise (error) channels (bit-flip, phase-flip, depolarizing, amplitude damping, etc.)
+1. No-cloning theorem, discretization of errors
+2. Noise (error) channels (bit-flip, phase-flip, depolarizing, etc.)
 3. Bit-flip/phase-flip intuition and the role of redundancy in quantum encoding
-4. Stabilizer formalism, syndrome extraction, and recovery operations
-5. Parity-check matrix
-6. Distance, logical qubits, and code rate tradeoffs
-7. Threshold theorem (and fault-tolerance)
-8. Decoding strategies (MWPM, belief propagation, neural decoders, etc.)
-* Surface codes and topological protection principles
+4. Stabilizer formalism, syndrome extraction, recovery operations, Parity-check matrix
+5. Distance, logical qubits, and code rate tradeoffs
+
+### If your project is related to the decoding part of QEC
+
+6. Threshold theorem (and fault-tolerance)
+7. Decoding strategies (MWPM, belief propagation, neural decoders, etc.)
 
 ## Main Software Ecosystem
 
-- **[qLDPC](https://github.com/MatchCake/MatchCake)**
+- **[qLDPC](https://github.com/qLDPCOrg/qLDPC)**
 - **[cudaq-qec](https://nvidia.github.io/cudaqx/index.html)**
 - [Qiskit QEC](https://qiskit-community.github.io/qiskit-qec/)
 - [Stim](https://github.com/quantumlib/Stim)
@@ -43,12 +44,14 @@ This page is an onboarding entry point to QEC: it provides references for core c
 
 ### Textbooks and introductory guides
 
-- Nielsen, M. A., & Chuang, I. L. *Quantum Computation and Quantum Information* (10th Anniversary Ed., Cambridge University Press, 2010). (QEC foundations)
+- Nielsen, M. A., & Chuang, I. L. *Quantum Computation and Quantum Information* (10th Anniversary Ed., Cambridge University Press, 2010).
     - [Chapter 10 - Quantum error-correction](https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf)
 - Lidar, D. A., & Brun, T. A. (Eds.). *Quantum Error Correction* (Cambridge University Press, 2013).
     - [Chapter 2 - Introduction to quantum error correction](https://www.weizmann.ac.il/math/vidick/sites/math.vidick/files/uploads/Bacon_IntroToQEC.pdf)
 - [Quantum Error Correction: An Introductory Guide](https://arxiv.org/abs/1907.11157)
 - [An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation](https://arxiv.org/abs/0904.2557)
+- Preskill, J. *[Lecture Notes for Physics 219/Chapter on Quantum Error Correction](https://www.preskill.caltech.edu/ph229/)* (Caltech).
+    - [Chapter 7 - Quantum Error Correction](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf)
 - [Threshold theorem](https://en.wikipedia.org/wiki/Threshold_theorem)
 
 ### Online blog on QEC
@@ -58,28 +61,15 @@ This page is an onboarding entry point to QEC: it provides references for core c
     - [The stabilizer trilogy II - Logical operators](https://arthurpesah.me/blog/2023-03-16-stabilizer-formalism-2/)
     - [The stabilizer trilogy III — Parity-check matrices and decoding](https://arthurpesah.me/blog/2023-03-28-stabilizer-formalism-3/)
 
-### Other known references
+### Decoding
 
-- Terhal, B. M. "[Quantum error correction for quantum memories](https://doi.org/10.1103/RevModPhys.87.307)." *Reviews of Modern Physics* **87**, 307-346 (2015).
-- Preskill, J. *[Lecture Notes for Physics 219/Chapter on Quantum Error Correction](https://www.preskill.caltech.edu/ph229/)* (Caltech).
-    - [Chapter 7 - Quantum Error Correction](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf)
+- iOlius A. d., Fuentes P., Orús R., Crespo1 P. M., Martinez J. E. *[Decoding algorithms for surface codes](https://doi.org/10.22331/q-2024-10-10-1498).*
+- Poulin P., Chung Y. *[On the iterative decoding of sparse quantum codes](https://arxiv.org/abs/0801.1241v2).*
+- Iyer P., Poulin D. *[Hardness of decoding quantum stabilizer codes](https://arxiv.org/abs/1310.3235).*
+- Chub C. *[General tensor network decoding of 2D Pauli codes](https://arxiv.org/abs/2101.04125v3).*
+- Chubb C. *[Tensor-Network Decoding Beyond 2D](https://doi.org/10.1103/PRXQuantum.5.040303).*
 
-### Foundational and Influential Papers (if you're interested)
-
-- Shor, P. W. "Scheme for reducing decoherence in quantum computer memory." *Physical Review A* **52**, R2493-R2496 (1995).
-- Steane, A. M. "Error Correcting Codes in Quantum Theory." *Physical Review Letters* **77**, 793-797 (1996).
-- Calderbank, A. R., & Shor, P. W. "Good quantum error-correcting codes exist." *Physical Review A* **54**, 1098-1105 (1996).
-- Kitaev, A. Y. "Fault-tolerant quantum computation by anyons." *Annals of Physics* **303**, 2-30 (2003).
-- Dennis, E., Kitaev, A., Landahl, A., & Preskill, J. "Topological quantum memory." *Journal of Mathematical Physics* **43**, 4452-4505 (2002).
-- Fowler, A. G., Mariantoni, M., Martinis, J. M., & Cleland, A. N. "Surface codes: Towards practical large-scale quantum computation." *Physical Review A* **86**, 032324 (2012).
-
-### Decoding and Practical Fault Tolerance
-
-- Edmonds, J. "[Paths, trees, and flowers](https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/paths-trees-and-flowers/08B492B72322C4130AE800C0610E0E21)." *Canadian Journal of Mathematics* **17**, 449-467 (1965). (Matching foundations used in MWPM decoders)
-- Bravyi, S., & Haah, J. "[Simulation of rare events in quantum error correction](https://doi.org/10.1103/PhysRevA.88.062308)." *Physical Review A* **88**, 062308 (2013).
-- Delfosse, N., & Nickerson, N. H. "[Almost-linear time decoding algorithm for topological codes](https://doi.org/10.22331/q-2021-12-02-595)." arXiv:1709.06218.
-
-### Practical Learning Resources
+## Practical Learning Resources
 
 - [cudaq-qec examples](https://nvidia.github.io/cudaqx/examples_rst/qec/examples.html)
 - [Qiskit QEC Documentation](https://qiskit-community.github.io/qiskit-qec/)
