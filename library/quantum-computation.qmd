@@ -1,0 +1,59 @@
+---
+title: "⚛ Quantum Computation — Foundations and Frontiers"
+format:
+  html:
+    toc: true
+    number-sections: true
+    math: mathjax
+---
+
+## Overview
+
+Quantum computation studies how information can be represented and processed using quantum-mechanical
+systems. Instead of classical bits, quantum algorithms operate on qubits, whose state can exhibit
+superposition and entanglement. This enables computational strategies that differ fundamentally from
+classical computing, especially for simulation of quantum matter, optimization, and selected algebraic tasks.
+
+In practice, the field combines linear algebra, quantum physics, computer science, and numerical methods.
+Modern workflows also include noisy intermediate-scale quantum (NISQ) hardware, classical simulation,
+and hybrid variational algorithms that mix quantum circuits with classical optimization.
+
+This page serves as a starting point for onboarding: it introduces some of the core concepts of the field,
+connects to practical software stacks, and provides high-quality references for self-study.
+
+## Core Concepts to Understand
+
+1. Qubits, state vectors, density matrices, and measurement
+2. Single- and multi-qubit gates, unitarity, and circuit model of computation
+3. Entanglement, nonlocal correlations, and quantum resources
+8. Main quantum algorithms (e.g. Grover algorithm and Shor algorithm)
+6. Variational circuits and hybrid quantum-classical optimization (e.g. Quantum Approximate Optimization Algorithm)
+7. Complexity intuition: where quantum speedups are expected (and where they are not)
+
+## Main Software Ecosystem
+
+- **[PennyLane](https://pennylane.ai/)**
+- **[Qiskit](https://qiskit.org/)**
+- [Cirq](https://quantumai.google/cirq)
+- [QuTiP](https://qutip.org/)
+- [Mitiq](https://mitiq.readthedocs.io/)
+
+## References
+
+### Introduction to quantum computing and quantum mechanics
+
+- [Quantum Country](https://quantum.country/)
+
+### Textbooks and Lecture Notes
+
+- Nielsen, M. A., & Chuang, I. L. *Quantum Computation and Quantum Information* (10th Anniversary Ed., Cambridge University Press, 2010).
+  - Chapter 2 and 4 in priority, then Chapter 1 and 3 if the time allows for it.
+- Preskill, J. *Lecture Notes for Physics 219: Quantum Computation* (Caltech): https://theory.caltech.edu/~preskill/ph219/
+- Griffiths, D. J., & Schroeter, D. F. (2018). *Introduction to Quantum Mechanics* (3rd ed.). Cambridge University Press
+
+### Practical Learning Resources
+
+- [IBM Quantum Learning](https://learning.quantum.ibm.com/)
+- [Qiskit Textbook (archived, still useful)](https://github.com/Qiskit/textbook)
+- [PennyLane Demos](https://pennylane.ai/qml/demonstrations/)
+- [Cirq Quantum Computing Tutorials](https://quantumai.google/cirq/tutorials)
