@@ -1,0 +1,157 @@
+---
+title: "🜏 Python Good Practices — The Discipline of the Craft"
+---
+
+In this laboratory, Python is not merely a tool—it is an instrument of precision.
+
+Code that is unclear, irreproducible, or poorly structured is considered unstable magic.
+
+This page defines the expected standards.
+
+---
+
+## 🜂 Environment Management — *The First Rule*
+
+All projects **must use isolated environments**.
+
+### ⚠️ Mandatory Tool: uv
+
+You are required to use :contentReference[oaicite:0]{index=0} for:
+
+- Creating virtual environments  
+- Managing dependencies  
+- Installing packages  
+
+### Why uv?
+
+- Extremely fast (Rust-based)
+- Unified toolchain (replaces `pip`, `venv`, `pip-tools`)
+- Deterministic dependency resolution
+- Simpler workflow
+
+### Minimal Workflow
+
+```bash
+# Create environment
+uv init --python {python_version}
+
+# Install dependencies
+uv add numpy scipy torch
+
+# Run a script
+uv run python your_script.py
+````
+
+---
+
+## 🜁 Project Structure — *Order Before Power*
+
+A project must be organized as follows:
+
+```
+project/
+├── src/
+│   └── your_package/
+├── scripts/
+├── tests/
+├── pyproject.toml
+├── README.md
+└── .venv/
+```
+
+### Key Principles
+
+* Use `src/` layout to avoid import ambiguity
+* Separate **library code** from **scripts**
+* Always include a `pyproject.toml`
+
+---
+
+## 🜃 Code Quality — *Clarity Over Cleverness*
+
+### Rules
+
+* Functions must be **short and single-purpose**
+* Variable names must be explicit
+* Avoid hidden side effects
+* Prefer readability over micro-optimizations
+
+### Formatting & Linting
+
+Recommended tools:
+
+* ruff
+* black
+
+Example:
+
+```bash
+ruff check .
+ruff format .
+```
+
+---
+
+## 🜄 Reproducibility — *No Uncontrolled Variance*
+
+* All dependencies must be pinned
+* Experiments must be reproducible from a fresh clone
+* Random seeds must be controlled when relevant
+
+---
+
+## 🜂 Testing — *Trust, but Verify*
+
+Use:
+
+* pytest
+
+Minimum expectations:
+
+* Core functions must have tests
+* Edge cases must be considered
+* Tests must run without manual intervention
+
+```bash
+uv run pytest
+```
+
+---
+
+## 🜏 Documentation — *Knowledge Must Persist*
+
+* Every module must have a docstring
+* Complex logic must be explained
+* Reports must reference the code that generated results
+
+---
+
+## 🜎 Recommended Resources — *External Grimoires*
+
+### Python Best Practices
+
+* [Python Packaging User Guide](https://packaging.python.org/en/latest/?utm_source=chatgpt.com)
+* [Real Python Best Practices](https://realpython.com/tutorials/best-practices/?utm_source=chatgpt.com)
+
+### uv Documentation
+
+* [uv Official Documentation](https://docs.astral.sh/uv/?utm_source=chatgpt.com)
+
+### Testing
+
+* [pytest Documentation](https://docs.pytest.org/en/stable/?utm_source=chatgpt.com)
+
+---
+
+## 🜏 Final Rule
+
+If your code cannot be:
+
+* installed cleanly,
+* executed reproducibly,
+* and understood by another researcher,
+
+then it is not complete.
+
+Discipline in tooling and structure is not optional.
+
