@@ -1,0 +1,55 @@
+---
+title: "🕸 Tensor Networks — Structure, Compression, and Quantum Many-Body Learning"
+format:
+  html:
+    toc: true
+    number-sections: true
+    math: mathjax
+---
+
+## Overview
+
+Tensor networks are structured factorizations of high-order tensors that make otherwise intractable
+computations feasible. They are central in quantum many-body physics, where they provide compact
+representations of states and operators with limited entanglement, and they are increasingly important
+in machine learning for compression, inductive bias, and scalable modeling.
+
+Instead of storing a full tensor with exponentially many coefficients, tensor-network ansatze decompose
+the object into local tensors connected by virtual indices (bonds). The bond dimensions control
+expressivity and computational cost, creating a practical tradeoff between accuracy and efficiency.
+
+This page is an onboarding entry point to the tensor-network toolkit used across simulation and learning:
+it summarizes the key ideas, points to software ecosystems, and gathers references for rigorous study.
+
+## Core Concepts to Master
+
+1. Tensor rank, index contraction, and graphical notation
+2. Matrix Product States (MPS) and Matrix Product Operators (MPO)
+3. Entanglement area laws and bond-dimension scaling
+4. Singular Value Decompositon (SVD)
+5. Core algorithms: DMRG, TEBD, and variational optimization
+6. Practical error control: truncation criteria and conditioning
+
+## Main Software Ecosystem
+
+- **[quimb](https://quimb.readthedocs.io/)**
+- [Cotengra](https://cotengra.readthedocs.io/en/latest/)
+- [ITensor](https://itensor.org/)
+- [TeNPy](https://tenpy.readthedocs.io/)
+
+## References
+
+### Textbooks and Lecture Notes
+
+- Bridgeman, J. C., & Chubb, C. T. *Hand-waving and Interpretive Dance: An Introductory Course on Tensor Networks.* *Journal of Physics A* **50**, 223001 (2017).
+- Biamonte, J., & Bergholm, V. *Tensor Networks in a Nutshell.* arXiv:1708.00006.
+
+### Tensor Networks and Machine Learning
+
+- Stoudenmire, E., & Schwab, D. J. "Supervised Learning with Tensor Networks." *NeurIPS* (2016).
+
+### Practical Learning Resources
+
+- [quimb - Examples](https://quimb.readthedocs.io/en/latest/examples.html)
+- [Tensor Network - Learning Resources](https://tensornetwork.org/)
+- [ITensor - Documentation and Tutorials](https://itensor.github.io/ITensors.jl/stable/)

@@ -22,17 +22,20 @@ website:
         menu:
           - href: library/python-good-practices.qmd
             text: Python Good Practices
+          - href: library/quantum-computation.qmd
+            text: Quantum Computation
+          - href: library/quantum-simulation.qmd
+            text: Quantum Simulation
           - href: library/fermiml.qmd
             text: FermiML
           - href: library/tensor-networks.qmd
             text: Tensor Networks
           - href: library/qec.qmd
             text: Quantum Error Correction
-          - href: library/quantum-simulation.qmd
-            text: Quantum Simulation
 
 format:
   html:
     theme: darkly
     css: styles.css
     toc: true
+

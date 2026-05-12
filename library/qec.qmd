@@ -1,0 +1,78 @@
+---
+title: "Quantum Error Correction"
+format:
+  html:
+    toc: true
+    number-sections: true
+    math: mathjax
+---
+
+## Overview
+
+Quantum error correction (QEC) provides the theoretical and practical framework for protecting quantum information against noise, decoherence, and imperfect control.
+Because qubits cannot be cloned and measurements disturb quantum states, QEC differs fundamentally from classical error correction: information is encoded nonlocally across many physical qubits, and errors are inferred indirectly through _syndrome_ measurements.
+
+QEC is the key bridge between noisy near-term devices and fault-tolerant quantum computing.
+It combines stabilizer theory, coding theory, quantum circuit design, and hardware constraints into a unified stack for reliable computation.
+
+This page is an onboarding entry point to QEC: it provides references for core concepts of the field and for practical software tools.
+
+## Core Concepts to Understand
+
+1. No-cloning theorem, discretization of errors
+2. Noise (error) channels (bit-flip, phase-flip, depolarizing, etc.)
+3. Bit-flip/phase-flip intuition and the role of redundancy in quantum encoding
+4. Stabilizer formalism, syndrome extraction, recovery operations, Parity-check matrix
+5. Distance, logical qubits, and code rate tradeoffs
+
+### If your project is related to the decoding part of QEC
+
+6. Threshold theorem (and fault-tolerance)
+7. Decoding strategies (MWPM, belief propagation, neural decoders, etc.)
+
+## Main Software Ecosystem
+
+- **[qLDPC](https://github.com/qLDPCOrg/qLDPC)**
+- **[cudaq-qec](https://nvidia.github.io/cudaqx/index.html)**
+- [Qiskit QEC](https://qiskit-community.github.io/qiskit-qec/)
+- [Stim](https://github.com/quantumlib/Stim)
+- [PyMatching](https://github.com/oscarhiggott/PyMatching)
+- [PECOS](https://github.com/PECOS-packages/PECOS)
+- [qecsim](https://qecsim.github.io/)
+
+## References
+
+### Textbooks and introductory guides
+
+- Nielsen, M. A., & Chuang, I. L. *Quantum Computation and Quantum Information* (10th Anniversary Ed., Cambridge University Press, 2010).
+    - [Chapter 10 - Quantum error-correction](https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf)
+- Lidar, D. A., & Brun, T. A. (Eds.). *Quantum Error Correction* (Cambridge University Press, 2013).
+    - [Chapter 2 - Introduction to quantum error correction](https://www.weizmann.ac.il/math/vidick/sites/math.vidick/files/uploads/Bacon_IntroToQEC.pdf)
+- [Quantum Error Correction: An Introductory Guide](https://arxiv.org/abs/1907.11157)
+- [An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation](https://arxiv.org/abs/0904.2557)
+- Preskill, J. *[Lecture Notes for Physics 219/Chapter on Quantum Error Correction](https://www.preskill.caltech.edu/ph229/)* (Caltech).
+    - [Chapter 7 - Quantum Error Correction](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf)
+- [Threshold theorem](https://en.wikipedia.org/wiki/Threshold_theorem)
+
+### Online blog on QEC
+
+- [Arthur Pesah's blog](https://arthurpesah.me/blog/)
+    - [The stabilizer trilogy I - Stabilizer codes](https://arthurpesah.me/blog/2023-01-31-stabilizer-formalism-1/)
+    - [The stabilizer trilogy II - Logical operators](https://arthurpesah.me/blog/2023-03-16-stabilizer-formalism-2/)
+    - [The stabilizer trilogy III — Parity-check matrices and decoding](https://arthurpesah.me/blog/2023-03-28-stabilizer-formalism-3/)
+
+### Decoding
+
+- iOlius A. d., Fuentes P., Orús R., Crespo1 P. M., Martinez J. E. *[Decoding algorithms for surface codes](https://doi.org/10.22331/q-2024-10-10-1498).*
+- Poulin P., Chung Y. *[On the iterative decoding of sparse quantum codes](https://arxiv.org/abs/0801.1241v2).*
+- Iyer P., Poulin D. *[Hardness of decoding quantum stabilizer codes](https://arxiv.org/abs/1310.3235).*
+- Chub C. *[General tensor network decoding of 2D Pauli codes](https://arxiv.org/abs/2101.04125v3).*
+- Chubb C. *[Tensor-Network Decoding Beyond 2D](https://doi.org/10.1103/PRXQuantum.5.040303).*
+
+## Practical Learning Resources
+
+- [cudaq-qec examples](https://nvidia.github.io/cudaqx/examples_rst/qec/examples.html)
+- [Qiskit QEC Documentation](https://qiskit-community.github.io/qiskit-qec/)
+- [Stim Documentation](https://github.com/quantumlib/Stim/wiki)
+- [PyMatching Documentation](https://pymatching.readthedocs.io/)
+- [Error Correction Zoo](https://errorcorrectionzoo.org/)
