@@ -1,0 +1,38 @@
+---
+title: "Forbidden Class Unlocked"
+format:
+  html:
+    page-layout: custom
+    toc: false
+    body-classes: forbidden-unlock-page
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="../../assets/trials/unlock.css">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap">
+---
+
+::: {.unlock-stage}
+::: {.unlock-sigil}
+🜔
+:::
+
+::: {.unlock-headline}
+FORBIDDEN CLASS UNLOCKED
+:::
+
+::: {.unlock-subtitle}
+Alien Research
+:::
+
+::: {.unlock-author}
+with **The Dark Algebraist**
+:::
+
+::: {.unlock-flavor}
+*What lies beyond the codex.*
+:::
+
+::: {.unlock-action}
+Ask him directly for Forbidden Knowledge.
+:::
+:::

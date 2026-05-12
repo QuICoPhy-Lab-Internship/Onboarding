@@ -1,0 +1,52 @@
+---
+title: "🜔 The Bestiary"
+---
+
+Each assignment is a creature. Each creature has a tier. Each tier has a point value.
+
+This Bestiary names the recurring shapes of weekly work — the creatures you will face most often. For work outside the Bestiary, the master who assigns it will name a *wild tier* in the moment.
+
+## 🜂 Logging a Defeat
+
+When you complete an assignment, append to `progress.md` in your project repo. The format is described in [the Progress Log Template](progress-template.md):
+
+```
+- YYYY-MM-DD — **Code Familiar** (I, +10) — short note on what was done
+- YYYY-MM-DD — **Wraith** (Marco-judged, +15) — short note
+```
+
+Use the printed point value for named creatures. For Marco-judged work, leave a `?` and let the master fill it in during PR review.
+
+## 🜁 Named Creatures
+
+| Creature                     | Domain                                                         | Tier | Pts |
+|------------------------------|----------------------------------------------------------------|------|-----|
+| **Code Familiar**            | small utility, refactor, scaffolding                           | I    | 10  |
+| **Glyph Sprite**             | a clean math derivation or lemma                               | I    | 10  |
+| **Phantom of the Stack**     | a tracked-down bug, root cause documented                      | II   | 20  |
+| **Beast of the Library**     | a paper read, distilled into a one-page summary                | II   | 20  |
+| **NaN Wraith**               | a numerical instability resolved (overflow, divergence, gradient pathology) | III  | 35  |
+| **Construct of the Pipeline**| infrastructure or data plumbing built and working              | III  | 35  |
+| **Drake of the Ansatz**      | a new method, model, or approach designed (not iteration)      | IV   | 60  |
+| **Specter of Convergence**   | proof or empirical study of convergence                        | IV   | 60  |
+| **Hydra of the Hyperparams** | a full sweep with analysis — every head a parameter            | IV   | 60  |
+| **Dragon of the Awakening**  | the week-2 milestone presentation                              | V    | 100 |
+| **Dragon of the Convergence**| the week-7 milestone presentation                              | V    | 100 |
+| **Quintessential Dragon**    | the week-12 milestone presentation                             | V    | 150 |
+
+## 🜃 Wild Tiers
+
+Sometimes the master assigns work that does not match any creature in the Bestiary. In that case the work is *wild*, and the master names its tier in the moment.
+
+| Tier        | Pts | Shape                                                       |
+|-------------|-----|-------------------------------------------------------------|
+| **Imp**     | 5   | trivial — a fix, a tweak, a one-liner                       |
+| **Wraith**  | 15  | small — a working artifact, not yet a study                 |
+| **Drake**   | 30  | substantial — judgment was required                         |
+| **Dragon**  | 60+ | rare — a research-shaped beast                              |
+
+Wild encounters are judged on completion, not at assignment. Log them with the master's stated tier and point value.
+
+## 🜄 A Final Note
+
+The Bestiary will grow. Creatures may be added, retired, or reweighted as the codex evolves. The master's word is final in any contested defeat.

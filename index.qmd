@@ -153,6 +153,33 @@ The following domains contain essential knowledge for your training:
 
 ---
 
+## 🜔 V. The Path of Ascent
+
+Beyond the rites and the rituals lies a continuous reckoning — a Path that measures every offering, every defeat, every quiet act of discipline.
+
+Every assignment is a creature. Every defeated creature is points. Points raise you through seven titles, from Initiate to Hierophant. Hidden Sigils are bestowed for deeds beyond the pattern. Three Forbidden Classes await those who climb high enough.
+
+Your log of creatures defeated lives in your own project repo, in `progress.md`. Your supervisor reviews it weekly with your code.
+
+Consult the Path:
+
+- [The Ladder](trials/ladder.qmd) — the seven titles and their thresholds
+- [The Bestiary](trials/bestiary.qmd) — the creatures you will face
+- [Minor Mysteries](trials/sigils.qmd) — the sigils, cryptic
+- [Progress Log Template](trials/progress-template.md) — copy this into your project repo
+
+### 🜔 Sealed Forbidden Classes
+
+Three classes lie beyond the Library, sealed until the Path is climbed:
+
+- 🜔 **The Alchemy of Neural Networks** — *sealed until Journeyman of the Athanor*
+- 🜔 **The Ontology of the Quantum State** — *sealed until Adept of the Aludel*
+- 🜔 **Alien Research** — *sealed until Magister of the Vessel*
+
+When the seal breaks, **The Dark Algebraist** will share the way.
+
+---
+
 ## 🜏 Final Words
 
 This codex is not decorative—it is operational.
