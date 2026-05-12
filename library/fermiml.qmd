@@ -191,3 +191,29 @@ for simulating matchgate circuits — with a publication on the way!
    values?
 8. What is the Pfaffian of a matrix, and where does it appear in the computation of matchgate circuit outputs?
 
+### Additional References 
+### Basics of Quantum Mechanics, Quantum Computing, Quantum Information and Quantum Algorithms
+1) [Sakurai Quantum Mechanics Book] https://icourse.club/uploads/files/65fb4c16648d2b93f82fe3271c3381c211f2f532.pdf
+2) [Quantum Mechanics and Quantum Computing : An introduction] https://www.macs.hw.ac.uk/~des/qcnotesaims17.pdf
+3) [An Introduction to Quantum Computing for Non-Physicists] https://arxiv.org/abs/quant-ph/9809016
+4) [Nielsen and Chuang] https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf
+5) [Quantum Computing Since Democritus] https://s3.amazonaws.com/arena-attachments/958521/7c581f75f258e9c36788c60cf45f3961.pdf?1491247031
+6) [David Mermin] http://www-f1.ijs.si/~ramsak/Nanofizika/QCS/books_3092_0.pdf
+7) [Thomas Wong] Beginner Friendly : https://www.thomaswong.net/introduction-to-classical-and-quantum-computing-1e4p.pdf
+
+### Quantum Machine Learning
+1) [Supervised Learning With Quantum Computers] (Book Available in Print at the lab) https://ndl.ethernet.edu.et/bitstream/123456789/73371/1/320.pdf
+2) [An introduction to quantum machine learning] https://arxiv.org/abs/1409.3097
+3) [Quantum Computing and What it means for Data mining] https://www.researchgate.net/profile/Peter-Wittek/publication/264825604_Quantum_Machine_Learning_What_Quantum_Computing_Means_to_Data_Mining/links/562aacc208ae04c2aeb1cb64/Quantum-Machine-Learning-What-Quantum-Computing-Means-to-Data-Mining.pdf
+4) [Quantum Machine Learning : A Review] https://mlazarovits.github.io/LearningMachineLearning/assets/papers_summer19/quantum_ML.pdf
+
+### Option References for Fermionic Systems, Matchgates and Fermionic Quantum Computation
+1) [Jozsa and Miyake: Matchgate Basics] https://arxiv.org/abs/0804.4050
+2) [Bravyi and Kitaev: Fermionic Quantum Computation] https://arxiv.org/pdf/quant-ph/0003137
+3) [Majorana-Based Fermionic Quantum Computation] https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.220504
+4) [Jens Eisert, Basics of Second Quantization] https://www.physik.fu-berlin.de/en/einrichtungen/ag/ag-eisert/teaching/AdvancedQuantumMechanicsChapter32.pdf
+5) [Fermionic Systems for Quantum Information People] https://arxiv.org/abs/2006.03087
+6) [Fermionic Systems and Algebra] https://web2.ph.utexas.edu/~vadim/Classes/2022f/ffs.pdf
+7) [Quantum Simulation of Fermionic Systems] https://indico.global/event/8922/contributions/85116/attachments/39584/73648/Quantum_Simulation_of_Fermion_Systems.pdf
+
+
