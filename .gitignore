@@ -297,3 +297,4 @@ data/
 *.bkp
 /.quarto/
 **/*.quarto_ipynb
+/.claude
