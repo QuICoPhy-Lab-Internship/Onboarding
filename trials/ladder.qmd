@@ -1,0 +1,35 @@
+---
+title: "🜔 The Ladder of Ascent"
+---
+
+Seven rungs separate the Initiate from the Hierophant. Points accumulate. Titles transmute.
+
+## 🜂 How Points Accrue
+
+Three sources contribute to your ascent:
+
+- **Defeated creatures** — see [the Bestiary](bestiary.qmd). Most weekly work hits a named, pre-priced creature.
+- **Hidden Sigils** — see [Minor Mysteries](sigils.qmd). Bonus rewards bestowed for discipline beyond the pattern.
+- **Wild encounters** — work outside the Bestiary, judged in the moment by the master who assigns them.
+
+When your point total crosses a threshold, you transmute. The new title is bestowed by your master in the review of the Pull Request that triggered the crossing — you do not claim it yourself.
+
+## 🜁 The Seven Levels
+
+| Level | Title                              | Threshold |
+|-------|------------------------------------|-----------|
+| I     | Initiate                           | 0         |
+| II    | Acolyte of the Calx                | 75        |
+| III   | Apprentice of the Crucible         | 200       |
+| IV    | Journeyman of the Athanor          | 400       |
+| V     | Adept of the Aludel                | 650       |
+| VI    | Magister of the Vessel             | 950       |
+| VII   | Hierophant of the Quintessence     | 1300+     |
+
+Levels IV, V, and VI carry sealed gifts — see [§V on the Codex](../index.qmd#v-the-path-of-ascent).
+
+## 🜃 Notes for the Apprentice
+
+- Levels are status, not gates. All knowledge in the Forbidden Library is open at every level. The Forbidden Classes are the only thing actually sealed by progression.
+- A slow week still earns. A fast week can leap past a milestone.
+- Your title is *bestowed*, not *claimed*. Update only `points_total` in your `progress.md`; leave `title` for the master to change.

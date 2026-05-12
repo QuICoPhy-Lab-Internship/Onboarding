@@ -1,0 +1,40 @@
+---
+title: "Forbidden Class Unlocked"
+format:
+  html:
+    page-layout: custom
+    toc: false
+    body-classes: forbidden-unlock-page
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="../../assets/trials/unlock.css">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap">
+---
+
+::: {.unlock-stage}
+::: {.unlock-sigil}
+🜔
+:::
+
+::: {.unlock-headline}
+FORBIDDEN CLASS UNLOCKED
+:::
+
+::: {.unlock-subtitle}
+The Alchemy of Neural Networks
+:::
+
+::: {.unlock-reveal}
+with **The Dark Algebraist** — *known to you as Marco*
+
+forged by **The Code Sorcerer** — *known to the lab as Jeremie*
+:::
+
+::: {.unlock-flavor}
+*Where matrices breathe and gradients sing.*
+:::
+
+::: {.unlock-action}
+Ask him directly for Forbidden Knowledge.
+:::
+:::
